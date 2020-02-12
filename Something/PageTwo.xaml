@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Something.PageTwo"
+             Title="Page Two">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="PrimaryToolBarButtonTapped" CommandParameter="I am a parameters" Text="Navigate" Order="Primary"/>
+    </ContentPage.ToolbarItems>
+
+    <Button Text="Command" Command="{ Binding Command }" CommandParameter="Command working woohoo!"/>
+
+    <ContentPage.Content>
+        <Label Text="Page Two"/>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Something.PageTwoDetail"
+             Title="Page two detail">
+    <ContentPage.Content>
+        <StackLayout Margin="15, 20, 15, 10">
+            <Entry Placeholder="Username" Text="{ Binding Username }"/>
+            <Entry Placeholder="Password" Text="{ Binding Path=Password, Mode=TwoWay}"/>
+            <Button Clicked="Button_Clicked" Text="Sign In" BorderColor="Green" BorderWidth="2" TextColor="Green" Margin="25, 15, 25, 15"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

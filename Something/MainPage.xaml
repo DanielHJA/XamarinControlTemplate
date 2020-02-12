@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Something;assembly=Something"
+             mc:Ignorable="d"
+             x:Class="Something.MainPage">
+
+    <NavigationPage Title="Page One" IconImageSource="one.png">
+        <x:Arguments>
+            <local:PageOne />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Page Two" IconImageSource="two.png">
+        <x:Arguments>
+            <local:PageTwo />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Page Three" IconImageSource="three.png">
+        <x:Arguments>
+            <local:PageThree />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
